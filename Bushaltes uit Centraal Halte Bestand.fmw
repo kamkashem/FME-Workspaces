@@ -5,53 +5,53 @@
 #    Command-line to run this workspace:
 #    
 #    
-#    E:\FME\fme.exe C:\Users\Willy\Desktop\bushaltes.fmw
+#    E:\FME\fme.exe "E:\Temp\FME\Bushaltes uit Centraal Halte Bestand.fmw"
 #          --DestDataset_ESRISHAPE "..\data\bushaltes.zip"
 #    
 #    
-#!   FME_STROKE_MAX_DEVIATION="0"
-#!   FME_GEOMETRY_HANDLING="Enhanced"
-#!   REDIRECT_TERMINATORS="NONE"
-#!   SOURCE_ROUTING_FILE="E:\temp.ffs"
-#!   DOC_EXTENTS="4860.98 1246.33"
-#!   SHOW_ANNOTATIONS="true"
-#!   DESTINATION="NONE"
-#!   FME_REPROJECTION_ENGINE="FME"
-#!   MAX_LOG_FEATURES="200"
-#!   PYTHON_COMPATIBILITY="27"
-#!   SHOW_INFO_NODES="true"
-#!   SOURCE="NONE"
-#!   DESCRIPTION=""
-#!   WARN_INVALID_XFORM_PARAM="Yes"
-#!   FME_DOCUMENT_PRIORGUID="7b9599d3-988e-4649-abf0-8f73a1bc4a27,94c286e9-a6b7-4de1-8338-d106cfeafa2a,25d4a124-7f13-40f1-97ff-b69126404783,e453f182-b1e1-4226-8b1a-78c36f998450,f6c493e1-0a92-478b-88f1-1c5fa13de611,00629eee-5a46-41a0-ac18-0284069dc8aa,cf02d8b8-3a9a-40cb-9428-1ce77f721fff,a89c900f-1fe3-4ecb-8628-f3fae885cd1c,fcea9e87-ed61-43f4-9ef1-7a30a33a92eb,30f68b49-eee9-4897-a0fc-06ca5d6cdf14,0f15e7c7-4186-49d3-b5f0-9373be60e77f,e030b568-3d57-4791-9316-3e908c577953,68bd15e9-6d06-431a-9047-947eeec190e2"
-#!   TITLE=""
-#!   END_PYTHON="import&lt;space&gt;os&lt;comma&gt;&lt;space&gt;datetime&lt;lf&gt;&lt;lf&gt;filename&lt;space&gt;=&lt;space&gt;&lt;apos&gt;ExportCHB&lt;apos&gt;&lt;space&gt;+&lt;space&gt;datetime.datetime.now&lt;openparen&gt;&lt;closeparen&gt;.strftime&lt;openparen&gt;&lt;quote&gt;%Y%m%d&lt;quote&gt;&lt;closeparen&gt;&lt;space&gt;+&lt;space&gt;&lt;apos&gt;010001.xml&lt;apos&gt;&lt;lf&gt;temp&lt;space&gt;=&lt;space&gt;os.environ&lt;openbracket&gt;&lt;apos&gt;TEMP&lt;apos&gt;&lt;closebracket&gt;&lt;lf&gt;zipped&lt;space&gt;=&lt;space&gt;os.path.join&lt;openparen&gt;temp&lt;comma&gt;&lt;space&gt;filename&lt;space&gt;+&lt;space&gt;&lt;apos&gt;.gz&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;unzipped&lt;space&gt;=&lt;space&gt;os.path.join&lt;openparen&gt;temp&lt;comma&gt;&lt;space&gt;filename&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;os.remove&lt;openparen&gt;zipped&lt;closeparen&gt;&lt;space&gt;&lt;lf&gt;os.remove&lt;openparen&gt;unzipped&lt;closeparen&gt;&lt;space&gt;&lt;lf&gt;&lt;lf&gt;&lt;lf&gt;&lt;lf&gt;&lt;lf&gt;"
-#!   LAST_SAVE_BUILD="FME(R) 2016.0.0.0 (20160115 - Build 16167 - WIN64)"
-#!   BEGIN_PYTHON="import&lt;space&gt;os&lt;comma&gt;&lt;space&gt;datetime&lt;comma&gt;&lt;space&gt;urllib&lt;comma&gt;&lt;space&gt;gzip&lt;comma&gt;&lt;space&gt;shutil&lt;lf&gt;&lt;lf&gt;filename&lt;space&gt;=&lt;space&gt;&lt;apos&gt;ExportCHB&lt;apos&gt;&lt;space&gt;+&lt;space&gt;datetime.datetime.now&lt;openparen&gt;&lt;closeparen&gt;.strftime&lt;openparen&gt;&lt;quote&gt;%Y%m%d&lt;quote&gt;&lt;closeparen&gt;&lt;space&gt;+&lt;space&gt;&lt;apos&gt;010001.xml&lt;apos&gt;&lt;lf&gt;url&lt;space&gt;=&lt;space&gt;&lt;apos&gt;http:&lt;solidus&gt;&lt;solidus&gt;data.ndovloket.nl&lt;solidus&gt;haltes&lt;solidus&gt;&lt;apos&gt;&lt;space&gt;+&lt;space&gt;filename&lt;space&gt;+&lt;space&gt;&lt;apos&gt;.gz&lt;apos&gt;&lt;lf&gt;temp&lt;space&gt;=&lt;space&gt;os.environ&lt;openbracket&gt;&lt;apos&gt;TEMP&lt;apos&gt;&lt;closebracket&gt;&lt;lf&gt;zipped&lt;space&gt;=&lt;space&gt;os.path.join&lt;openparen&gt;temp&lt;comma&gt;&lt;space&gt;filename&lt;space&gt;+&lt;space&gt;&lt;apos&gt;.gz&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;unzipped&lt;space&gt;=&lt;space&gt;os.path.join&lt;openparen&gt;temp&lt;comma&gt;&lt;space&gt;filename&lt;closeparen&gt;&lt;lf&gt;urllib.URLopener&lt;openparen&gt;&lt;closeparen&gt;.retrieve&lt;openparen&gt;url&lt;comma&gt;&lt;space&gt;zipped&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;with&lt;space&gt;gzip.open&lt;openparen&gt;zipped&lt;comma&gt;&lt;space&gt;&lt;apos&gt;rb&lt;apos&gt;&lt;closeparen&gt;&lt;space&gt;as&lt;space&gt;f_in&lt;comma&gt;&lt;space&gt;open&lt;openparen&gt;unzipped&lt;comma&gt;&lt;space&gt;&lt;apos&gt;wb&lt;apos&gt;&lt;closeparen&gt;&lt;space&gt;as&lt;space&gt;f_out:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;shutil.copyfileobj&lt;openparen&gt;f_in&lt;comma&gt;&lt;space&gt;f_out&lt;closeparen&gt;"
+#!   VIEW_POSITION="-2825.03 3731.29"
 #!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   TITLE=""
 #!   BEGIN_TCL=""
-#!   DOC_TOP_LEFT="-2748.46 2484.4"
-#!   CATEGORY=""
-#!   LOG_MAX_RECORDED_FEATURES="200"
-#!   FME_DOCUMENT_GUID="62c5bb60-7a6d-4749-9850-2d7119d80914"
 #!   FME_SERVER_SERVICES=""
-#!   PASSWORD=""
-#!   LEGAL_TERMS_CONDITIONS=""
-#!   ATTR_TYPE_ENCODING="SDF"
-#!   REQUIREMENTS_KEYWORD=""
-#!   LAST_SAVE_DATE="2017-10-08T20:59:12"
-#!   DESTINATION_ROUTING_FILE=""
-#!   WORKSPACE_VERSION="1"
-#!   USAGE=""
-#!   FME_BUILD_NUM="16167"
-#!   END_TCL=""
-#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
-#!   IGNORE_READER_FAILURE="No"
-#!   HISTORY=""
+#!   LOG_MAX_RECORDED_FEATURES="200"
 #!   REQUIREMENTS=""
-#!   VIEW_POSITION="-2825.03 3865.66"
-#!   LOG_FILE=""
+#!   LAST_SAVE_DATE="2017-10-09T22:15:08"
+#!   SOURCE_ROUTING_FILE="E:\temp.ffs"
+#!   END_TCL=""
+#!   DOC_TOP_LEFT="-2751.59 2434.4"
+#!   LEGAL_TERMS_CONDITIONS=""
+#!   LAST_SAVE_BUILD="FME(R) 2016.0.0.0 (20160115 - Build 16167 - WIN64)"
+#!   BEGIN_PYTHON="import&lt;space&gt;os&lt;comma&gt;&lt;space&gt;datetime&lt;comma&gt;&lt;space&gt;urllib&lt;comma&gt;&lt;space&gt;gzip&lt;comma&gt;&lt;space&gt;shutil&lt;lf&gt;&lt;lf&gt;filename&lt;space&gt;=&lt;space&gt;&lt;apos&gt;ExportCHB&lt;apos&gt;&lt;space&gt;+&lt;space&gt;datetime.datetime.now&lt;openparen&gt;&lt;closeparen&gt;.strftime&lt;openparen&gt;&lt;quote&gt;%Y%m%d&lt;quote&gt;&lt;closeparen&gt;&lt;space&gt;+&lt;space&gt;&lt;apos&gt;010001.xml.gz&lt;apos&gt;&lt;lf&gt;url&lt;space&gt;=&lt;space&gt;&lt;apos&gt;http:&lt;solidus&gt;&lt;solidus&gt;data.ndovloket.nl&lt;solidus&gt;haltes&lt;solidus&gt;&lt;apos&gt;&lt;space&gt;+&lt;space&gt;filename&lt;lf&gt;temp&lt;space&gt;=&lt;space&gt;os.environ&lt;openbracket&gt;&lt;apos&gt;TEMP&lt;apos&gt;&lt;closebracket&gt;&lt;lf&gt;zipped&lt;space&gt;=&lt;space&gt;os.path.join&lt;openparen&gt;temp&lt;comma&gt;&lt;space&gt;filename&lt;closeparen&gt;&lt;lf&gt;unzipped&lt;space&gt;=&lt;space&gt;os.path.join&lt;openparen&gt;temp&lt;comma&gt;&lt;space&gt;&lt;apos&gt;ExportCHB.xml&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;urllib.URLopener&lt;openparen&gt;&lt;closeparen&gt;.retrieve&lt;openparen&gt;url&lt;comma&gt;&lt;space&gt;zipped&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;with&lt;space&gt;gzip.open&lt;openparen&gt;zipped&lt;comma&gt;&lt;space&gt;&lt;apos&gt;rb&lt;apos&gt;&lt;closeparen&gt;&lt;space&gt;as&lt;space&gt;f_in&lt;comma&gt;&lt;space&gt;open&lt;openparen&gt;unzipped&lt;comma&gt;&lt;space&gt;&lt;apos&gt;wb&lt;apos&gt;&lt;closeparen&gt;&lt;space&gt;as&lt;space&gt;f_out:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;shutil.copyfileobj&lt;openparen&gt;f_in&lt;comma&gt;&lt;space&gt;f_out&lt;closeparen&gt;"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   DESTINATION="NONE"
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   DESCRIPTION=""
 #!   ZOOM_SCALE="100"
+#!   FME_DOCUMENT_GUID="738b3182-1c27-4ac4-ab2e-78c78aafb4e6"
+#!   SHOW_INFO_NODES="true"
+#!   CATEGORY=""
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   WORKSPACE_VERSION="1"
+#!   IGNORE_READER_FAILURE="No"
+#!   MAX_LOG_FEATURES="200"
+#!   PASSWORD=""
+#!   REDIRECT_TERMINATORS="NONE"
+#!   DESTINATION_ROUTING_FILE=""
+#!   SOURCE="NONE"
+#!   END_PYTHON="import&lt;space&gt;os&lt;comma&gt;&lt;space&gt;datetime&lt;lf&gt;&lt;lf&gt;filename&lt;space&gt;=&lt;space&gt;&lt;apos&gt;ExportCHB&lt;apos&gt;&lt;space&gt;+&lt;space&gt;datetime.datetime.now&lt;openparen&gt;&lt;closeparen&gt;.strftime&lt;openparen&gt;&lt;quote&gt;%Y%m%d&lt;quote&gt;&lt;closeparen&gt;&lt;space&gt;+&lt;space&gt;&lt;apos&gt;010001.xml.gz&lt;apos&gt;&lt;lf&gt;temp&lt;space&gt;=&lt;space&gt;os.environ&lt;openbracket&gt;&lt;apos&gt;TEMP&lt;apos&gt;&lt;closebracket&gt;&lt;lf&gt;zipped&lt;space&gt;=&lt;space&gt;os.path.join&lt;openparen&gt;temp&lt;comma&gt;&lt;space&gt;filename&lt;closeparen&gt;&lt;lf&gt;unzipped&lt;space&gt;=&lt;space&gt;os.path.join&lt;openparen&gt;temp&lt;comma&gt;&lt;space&gt;&lt;apos&gt;ExportCHB.xml&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;os.remove&lt;openparen&gt;zipped&lt;closeparen&gt;&lt;space&gt;&lt;lf&gt;os.remove&lt;openparen&gt;unzipped&lt;closeparen&gt;&lt;space&gt;&lt;lf&gt;&lt;lf&gt;&lt;lf&gt;&lt;lf&gt;&lt;lf&gt;"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   FME_BUILD_NUM="16167"
+#!   SHOW_ANNOTATIONS="true"
+#!   USAGE=""
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   REQUIREMENTS_KEYWORD=""
+#!   HISTORY=""
+#!   PYTHON_COMPATIBILITY="27"
+#!   LOG_FILE=""
+#!   FME_DOCUMENT_PRIORGUID="7b9599d3-988e-4649-abf0-8f73a1bc4a27,94c286e9-a6b7-4de1-8338-d106cfeafa2a,25d4a124-7f13-40f1-97ff-b69126404783,e453f182-b1e1-4226-8b1a-78c36f998450,f6c493e1-0a92-478b-88f1-1c5fa13de611,00629eee-5a46-41a0-ac18-0284069dc8aa,cf02d8b8-3a9a-40cb-9428-1ce77f721fff,a89c900f-1fe3-4ecb-8628-f3fae885cd1c,fcea9e87-ed61-43f4-9ef1-7a30a33a92eb,30f68b49-eee9-4897-a0fc-06ca5d6cdf14,0f15e7c7-4186-49d3-b5f0-9373be60e77f,e030b568-3d57-4791-9316-3e908c577953,68bd15e9-6d06-431a-9047-947eeec190e2,62c5bb60-7a6d-4749-9850-2d7119d80914"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   DOC_EXTENTS="4860.98 1246.34"
 #! >
 #! <DATASETS>
 #! <DATASET
@@ -67,7 +67,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE="xml_type {FME_GEN_GEOMETRY}"
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="multi_reader_id xml_int32 fme_feature_type xml_char(50) fme_sweep_angle xml_real64 fme_dataset xml_char(50) fme_rotation xml_real64 multi_reader_keyword xml_char(50) fme_type xml_char(50) multi_reader_full_id xml_int32 multi_reader_type xml_char(50) fme_primary_axis xml_real64 fme_text_string xml_char(50) fme_color xml_char(50) fme_geometry fme_char(50) fme_start_angle xml_real64 fme_secondary_axis xml_real64 fme_basename xml_char(50) xml_type xml_char(50) fme_fill_color xml_char(50) fme_text_size xml_real64"
+#!   EXPOSABLE_ATTRS="fme_secondary_axis xml_real64 fme_dataset xml_char(50) fme_geometry fme_char(50) fme_type xml_char(50) xml_type xml_char(50) fme_rotation xml_real64 multi_reader_type xml_char(50) fme_sweep_angle xml_real64 fme_primary_axis xml_real64 fme_fill_color xml_char(50) fme_start_angle xml_real64 fme_text_string xml_char(50) fme_basename xml_char(50) fme_color xml_char(50) fme_text_size xml_real64 multi_reader_keyword xml_char(50) multi_reader_id xml_int32 multi_reader_full_id xml_int32 fme_feature_type xml_char(50)"
 #!   DEFLINE_PARMS=""
 #!   ATTR_INDEX_TYPES=""
 #!   ATTR_NAME_INVALID_CHARS=""
@@ -76,24 +76,24 @@
 #!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
 #!   DATASET_TYPE="URL"
 #!   GENERATE_FME_BUILD_NUM="16167"
-#!   START_FEATURE=""
 #!   FEATURE_TYPES=""
-#!   COORDSYS=""
-#!   MIN_FEATURES=""
 #!   MAX_FEATURES=""
 #!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MIN_FEATURES=""
+#!   COORDSYS=""
+#!   START_FEATURE=""
 #! >
 #! <METAFILE_PARAMETER
 #!   NAME="READER_DATASET_HINT"
 #!   VALUE="Specify the WFS URL"
 #! />
 #! <METAFILE_PARAMETER
-#!   NAME="NETWORK_AUTHENTICATION"
-#!   VALUE="ALWAYS"
-#! />
-#! <METAFILE_PARAMETER
 #!   NAME="DATASET_NAME"
 #!   VALUE="URL"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="NETWORK_AUTHENTICATION"
+#!   VALUE="ALWAYS"
 #! />
 #! <METAFILE_PARAMETER
 #!   NAME="NETWORK_PROXY"
@@ -104,7 +104,7 @@
 #!   IS_SOURCE="true"
 #!   ROLE="READER"
 #!   FORMAT="XML"
-#!   DATASET="C:\Users\Willy\AppData\Local\Temp\ExportCHB20171008010001.xml"
+#!   DATASET="${TEMP}\ExportCHB.xml"
 #!   KEYWORD="XML_1"
 #!   MULTI_GEOM_ALLOWED="false"
 #!   ATTR_MAX_LENGTH="0"
@@ -113,7 +113,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE=""
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="multi_reader_id xml_int32 fme_feature_type xml_char(50) fme_sweep_angle xml_real64 fme_dataset xml_char(50) fme_rotation xml_real64 multi_reader_keyword xml_char(50) fme_type xml_char(50) multi_reader_full_id xml_int32 multi_reader_type xml_char(50) fme_primary_axis xml_real64 fme_text_string xml_char(50) fme_color xml_char(50) fme_geometry fme_char(50) fme_start_angle xml_real64 fme_secondary_axis xml_real64 fme_basename xml_char(50) xml_type xml_char(50) fme_fill_color xml_char(50) fme_text_size xml_real64"
+#!   EXPOSABLE_ATTRS="fme_secondary_axis xml_real64 fme_dataset xml_char(50) fme_geometry fme_char(50) fme_type xml_char(50) xml_type xml_char(50) fme_rotation xml_real64 multi_reader_type xml_char(50) fme_sweep_angle xml_real64 fme_primary_axis xml_real64 fme_fill_color xml_char(50) fme_start_angle xml_real64 fme_text_string xml_char(50) fme_basename xml_char(50) fme_color xml_char(50) fme_text_size xml_real64 multi_reader_keyword xml_char(50) multi_reader_id xml_int32 multi_reader_full_id xml_int32 fme_feature_type xml_char(50)"
 #!   DEFLINE_PARMS=""
 #!   ATTR_INDEX_TYPES=""
 #!   ATTR_NAME_INVALID_CHARS=""
@@ -122,36 +122,36 @@
 #!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
 #!   DATASET_TYPE="FILE_OR_URL"
 #!   GENERATE_FME_BUILD_NUM="17539"
-#!   START_FEATURE=""
 #!   FEATURE_TYPES=""
-#!   COORDSYS=""
-#!   MIN_FEATURES=""
 #!   MAX_FEATURES=""
 #!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MIN_FEATURES=""
+#!   COORDSYS=""
+#!   START_FEATURE=""
 #! >
 #! <METAFILE_PARAMETER
 #!   NAME="READER_DATASET_HINT"
 #!   VALUE="Select the XML file(s)"
 #! />
 #! <METAFILE_PARAMETER
-#!   NAME="ADVANCED_PARMS"
-#!   VALUE="XML_IN_VALIDATE_XFMAP XML_IN_VALIDATE_DATASET XML_OUT_TABLES_ROOT_ELEMENT XML_OUT_XML_NAMESPACE_DECLARATIONS XML_OUT_WRAP_TABLES XML_OUT_SUPPRESS_XML_DOCUMENT XML_OUT_SUPPRESS_XSD_DOCUMENT XML_OUT_GENERATE_ROW_ID XML_OUT_OUTPUT_ENCODING"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="NETWORK_AUTHENTICATION"
-#!   VALUE="YES"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="MIME_TYPE"
-#!   VALUE="application/XML"
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a name for the XML file"
 #! />
 #! <METAFILE_PARAMETER
 #!   NAME="DATASET_NAME"
 #!   VALUE="xml file"
 #! />
 #! <METAFILE_PARAMETER
-#!   NAME="WRITER_DATASET_HINT"
-#!   VALUE="Specify a name for the XML file"
+#!   NAME="MIME_TYPE"
+#!   VALUE="application/XML"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="NETWORK_AUTHENTICATION"
+#!   VALUE="YES"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="XML_IN_VALIDATE_XFMAP XML_IN_VALIDATE_DATASET XML_OUT_TABLES_ROOT_ELEMENT XML_OUT_XML_NAMESPACE_DECLARATIONS XML_OUT_WRAP_TABLES XML_OUT_SUPPRESS_XML_DOCUMENT XML_OUT_SUPPRESS_XSD_DOCUMENT XML_OUT_GENERATE_ROW_ID XML_OUT_OUTPUT_ENCODING"
 #! />
 #! <METAFILE_PARAMETER
 #!   NAME="NETWORK_PROXY"
@@ -171,7 +171,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE="SHAPE_GEOMETRY {FME_GEN_GEOMETRY} shape_dimension auto"
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="fme_dataset char(50) fme_secondary_axis double fme_text_string char(50) fme_start_angle double shape_measures char(254) fme_feature_type char(50) fme_rotation double fme_fill_color char(50) fme_text_size double fme_color char(50) fme_basename char(50) fme_primary_axis double SHAPE_GEOMETRY char(50) fme_type char(50) fme_geometry fme_char(50) fme_sweep_angle double"
+#!   EXPOSABLE_ATTRS="fme_text_string char(50) fme_feature_type char(50) fme_fill_color char(50) fme_text_size double fme_primary_axis double fme_start_angle double fme_type char(50) fme_geometry fme_char(50) shape_measures char(254) fme_color char(50) SHAPE_GEOMETRY char(50) fme_secondary_axis double fme_basename char(50) fme_dataset char(50) fme_rotation double fme_sweep_angle double"
 #!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP shape_layer_group shape_dimension Shapefile&quot; &quot;&quot; &quot;GUI LOOKUP_CHOICE shape_dimension Dimension&lt;space&gt;From&lt;space&gt;First&lt;space&gt;Feature,auto%2D,2d%2D&lt;space&gt;+&lt;space&gt;Measures,2dm%3D&lt;space&gt;+&lt;space&gt;Measures,3dm Output Dimension:&quot; auto "
 #!   ATTR_INDEX_TYPES="Indexed"
 #!   ATTR_NAME_INVALID_CHARS=". -%[]&quot;!?*&apos;&amp;\/{}"
@@ -185,12 +185,16 @@
 #!   COORDSYS=""
 #! >
 #! <METAFILE_PARAMETER
+#!   NAME="DEFAULT_GEOMETRY_TYPE"
+#!   VALUE="shape_first_feature"
+#! />
+#! <METAFILE_PARAMETER
 #!   NAME="READER_DATASET_HINT"
 #!   VALUE="Select the Esri Shapefile(s)"
 #! />
 #! <METAFILE_PARAMETER
-#!   NAME="ADVANCED_PARMS"
-#!   VALUE="ESRISHAPE_IN_ENCODING ESRISHAPE_IN_TRIM_PRECEDING_SPACES ESRISHAPE_IN_SIMPLE_DONUT_GEOMETRY ESRISHAPE_IN_MEASURES_AS_Z ESRISHAPE_IN_DISSOLVE_HOLES ESRISHAPE_IN_REPORT_BAD_GEOMETRY ESRISHAPE_OUT_STRICT_COMPATIBILITY ESRISHAPE_OUT_PRESERVE_RING_VERTEX_ORDER ESRISHAPE_OUT_SURFACE_AND_SOLID_STORAGE ESRISHAPE_OUT_MEASURES_AS_Z"
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a folder for the Esri Shapefile"
 #! />
 #! <METAFILE_PARAMETER
 #!   NAME="DATASET_NAME"
@@ -201,16 +205,12 @@
 #!   VALUE="Shapefile1"
 #! />
 #! <METAFILE_PARAMETER
-#!   NAME="WRITER_DATASET_HINT"
-#!   VALUE="Specify a folder for the Esri Shapefile"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="DEFAULT_GEOMETRY_TYPE"
-#!   VALUE="shape_first_feature"
-#! />
-#! <METAFILE_PARAMETER
 #!   NAME="FEATURE_TYPE_NAME"
 #!   VALUE="Shapefile"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="ESRISHAPE_IN_ENCODING ESRISHAPE_IN_TRIM_PRECEDING_SPACES ESRISHAPE_IN_SIMPLE_DONUT_GEOMETRY ESRISHAPE_IN_MEASURES_AS_Z ESRISHAPE_IN_DISSOLVE_HOLES ESRISHAPE_IN_REPORT_BAD_GEOMETRY ESRISHAPE_OUT_STRICT_COMPATIBILITY ESRISHAPE_OUT_PRESERVE_RING_VERTEX_ORDER ESRISHAPE_OUT_SURFACE_AND_SOLID_STORAGE ESRISHAPE_OUT_MEASURES_AS_Z"
 #! />
 #! </DATASET>
 #! </DATASETS>
@@ -989,8 +989,8 @@
 #!   IS_EDITABLE="true"
 #!   IDENTIFIER="20"
 #!   FEAT_GEOMTYPE="shape_point"
-#!   POSITION="1369.88 3119.53"
-#!   BOUNDING_RECT="1369.88 3119.53 663.141 71"
+#!   POSITION="1366.75 3069.53"
+#!   BOUNDING_RECT="1366.75 3069.53 663.141 71"
 #!   ORDER="5e+14"
 #!   COLLAPSED="true"
 #!   KEYWORD="ESRISHAPE_1"
@@ -1007,8 +1007,8 @@
 #!     <FEAT_ATTRIBUTE ATTR_NAME="bicyclepar" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #!     <FEAT_ATTRIBUTE ATTR_NAME="bins" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #!     <FEAT_ATTRIBUTE ATTR_NAME="shelter" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <DEFLINE_PARM PARM_NAME="shape_layer_group" PARM_VALUE=""/>
 #!     <DEFLINE_PARM PARM_NAME="shape_dimension" PARM_VALUE="auto"/>
+#!     <DEFLINE_PARM PARM_NAME="shape_layer_group" PARM_VALUE=""/>
 #! </FEATURE_TYPE>
 #! <FEATURE_TYPE
 #!   IS_SOURCE="true"
@@ -1018,8 +1018,8 @@
 #!   IS_EDITABLE="false"
 #!   IDENTIFIER="30"
 #!   FEAT_GEOMTYPE="xml_no_geom"
-#!   POSITION="-2659.41 3179.53"
-#!   BOUNDING_RECT="-2659.41 3179.53 -1 -1"
+#!   POSITION="-2662.54 3129.53"
+#!   BOUNDING_RECT="-2662.54 3129.53 -1 -1"
 #!   ORDER="5e+14"
 #!   COLLAPSED="true"
 #!   KEYWORD="XML_1"
@@ -1153,8 +1153,8 @@
 #!   IS_EDITABLE="false"
 #!   IDENTIFIER="41"
 #!   FEAT_GEOMTYPE="xml_no_geom xml_point xml_line xml_area xml_arc xml_surface xml_solid xml_aggregate"
-#!   POSITION="-151.452 3495.98"
-#!   BOUNDING_RECT="-151.452 3495.98 -1 -1"
+#!   POSITION="-154.577 3445.98"
+#!   BOUNDING_RECT="-154.577 3445.98 -1 -1"
 #!   ORDER="5e+14"
 #!   COLLAPSED="true"
 #!   KEYWORD="WFS_1"
@@ -1183,8 +1183,8 @@
 #!   IS_EDITABLE="true"
 #!   IDENTIFIER="35"
 #!   FEAT_GEOMTYPE="shape_point"
-#!   POSITION="1369.88 2875.91"
-#!   BOUNDING_RECT="1369.88 2875.91 675.008 71"
+#!   POSITION="1366.75 2825.91"
+#!   BOUNDING_RECT="1366.75 2825.91 675.008 71"
 #!   ORDER="5e+14"
 #!   COLLAPSED="true"
 #!   KEYWORD="ESRISHAPE_1"
@@ -1201,8 +1201,8 @@
 #!     <FEAT_ATTRIBUTE ATTR_NAME="bicyclepar" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #!     <FEAT_ATTRIBUTE ATTR_NAME="bins" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #!     <FEAT_ATTRIBUTE ATTR_NAME="shelter" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <DEFLINE_PARM PARM_NAME="shape_layer_group" PARM_VALUE=""/>
 #!     <DEFLINE_PARM PARM_NAME="shape_dimension" PARM_VALUE="auto"/>
+#!     <DEFLINE_PARM PARM_NAME="shape_layer_group" PARM_VALUE=""/>
 #! </FEATURE_TYPE>
 #! </FEATURE_TYPES>
 #! <FMESERVER>
@@ -1223,10 +1223,10 @@
 #! <COMMENT
 #!   IDENTIFIER="56"
 #!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Gedownload bronbestand (.gz en .XML) wordt opgeruimd in Python shutdown script&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#!   POSITION="1144.62 2626.9"
-#!   TOP_LEFT="1144.62 2626.9"
-#!   BOTTOM_RIGHT="2112.52 2484.4"
-#!   BOUNDING_RECT="1144.62 2626.9 967.903 142.501"
+#!   POSITION="1141.49 2576.9"
+#!   TOP_LEFT="1141.49 2576.9"
+#!   BOTTOM_RIGHT="2109.4 2434.4"
+#!   BOUNDING_RECT="1141.49 2576.9 967.903 142.501"
 #!   ORDER="5e+14"
 #!   FOLLOW_ANCHOR="true"
 #!   INFO_NODE="false"
@@ -1238,10 +1238,10 @@
 #! <COMMENT
 #!   IDENTIFIER="39"
 #!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Centrale Halte Bestand (CHB) wordt in Python startup script gedownload.&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Bron: &lt;a href=&quot;http://data.ndovloket.nl/haltes/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://data.ndovloket.nl/haltes/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#!   POSITION="-2748.46 3529.16"
-#!   TOP_LEFT="-2748.46 3529.16"
-#!   BOTTOM_RIGHT="-1328.13 3386.66"
-#!   BOUNDING_RECT="-2748.46 3529.16 1420.33 142.501"
+#!   POSITION="-2751.59 3479.16"
+#!   TOP_LEFT="-2751.59 3479.16"
+#!   BOTTOM_RIGHT="-1331.26 3336.66"
+#!   BOUNDING_RECT="-2751.59 3479.16 1420.33 142.501"
 #!   ORDER="5e+14"
 #!   FOLLOW_ANCHOR="true"
 #!   INFO_NODE="false"
@@ -1253,14 +1253,14 @@
 #! <COMMENT
 #!   IDENTIFIER="42"
 #!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Provinciegrens Groningen ophalen&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Bron: &lt;a href=&quot;https://www.pdok.nl/nl/service/wfs-bestuurlijke-grenzen&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://www.pdok.nl/nl/service/wfs-bestuurlijke-grenzen&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Met behulp van XML Filter Expression alleen provincie Groningen selecteren&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#!   POSITION="-193.452 3730.74"
-#!   TOP_LEFT="-193.452 3730.74"
-#!   BOTTOM_RIGHT="-194.452 3731.74"
-#!   BOUNDING_RECT="-193.452 3730.74 -1 -1"
+#!   POSITION="-196.577 3680.74"
+#!   TOP_LEFT="-196.577 3680.74"
+#!   BOTTOM_RIGHT="-197.577 3681.74"
+#!   BOUNDING_RECT="-196.577 3680.74 -1 -1"
 #!   ORDER="5e+14"
 #!   FOLLOW_ANCHOR="true"
 #!   INFO_NODE="false"
-#!   COLOUR="1,1,0.784314,0.196078"
+#!   COLOUR="1,1,0.784314,0.192157"
 #!   SIZE_POLICY="8"
 #!   COMMENT_TYPE="REGULAR"
 #!   ANCHORED_NODE="41"
@@ -1273,31 +1273,31 @@
 #!   IDENTIFIER="32"
 #!   NAME="Filter attributen en features"
 #!   DESCRIPTION="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#!   TOP_LEFT="-2000.01 3290.66"
-#!   BOTTOM_RIGHT="-1087.5 2709.4"
-#!   BOUNDING_RECT="-2000.01 3290.66 912.508 581.256"
+#!   TOP_LEFT="-2003.14 3240.66"
+#!   BOTTOM_RIGHT="-1090.63 2659.4"
+#!   BOUNDING_RECT="-2003.14 3240.66 912.508 581.256"
 #!   STICKY="true"
 #!   COLOUR="0.858824,0.819608,0.419608"
-#!   CONTENTS="4 16 24 "
+#!   CONTENTS="16 4 24 "
 #! />
 #! <BOOKMARK
 #!   IDENTIFIER="33"
 #!   NAME="Maak geometrie (RD New)"
 #!   DESCRIPTION="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#!   TOP_LEFT="-977.136 3287.54"
-#!   BOTTOM_RIGHT="-347.136 2709.41"
-#!   BOUNDING_RECT="-977.136 3287.54 630 578.131"
+#!   TOP_LEFT="-980.261 3237.54"
+#!   BOTTOM_RIGHT="-350.261 2659.41"
+#!   BOUNDING_RECT="-980.261 3237.54 630 578.131"
 #!   STICKY="true"
 #!   COLOUR="0.858824,0.819608,0.419608"
-#!   CONTENTS="23 18 9 "
+#!   CONTENTS="23 9 18 "
 #! />
 #! <BOOKMARK
 #!   IDENTIFIER="34"
 #!   NAME="Filter op provinciegrens Groningen"
 #!   DESCRIPTION="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#!   TOP_LEFT="-236.878 3287.54"
-#!   BOTTOM_RIGHT="484.376 2709.41"
-#!   BOUNDING_RECT="-236.878 3287.54 721.254 578.131"
+#!   TOP_LEFT="-240.003 3237.54"
+#!   BOTTOM_RIGHT="481.251 2659.41"
+#!   BOUNDING_RECT="-240.003 3237.54 721.254 578.131"
 #!   STICKY="true"
 #!   COLOUR="0.858824,0.819608,0.419608"
 #!   CONTENTS="25 "
@@ -1308,8 +1308,8 @@
 #!   IDENTIFIER="4"
 #!   TYPE="AttributeKeeper"
 #!   VERSION="3"
-#!   POSITION="-1758.13 3179.53"
-#!   BOUNDING_RECT="-1758.13 3179.53 -1 -1"
+#!   POSITION="-1761.26 3129.53"
+#!   BOUNDING_RECT="-1761.26 3129.53 -1 -1"
 #!   ORDER="5e+14"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -1328,18 +1328,18 @@
 #!     <XFORM_ATTR ATTR_NAME="quaynamedata.quayname" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="quayowner.quayownercode" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="quaystatusdata.quaystatus" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="KEEP_LIST" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="KEEP_ATTRS" PARM_VALUE="quayfacilities.bins,quaynamedata.quayname,quaystatusdata.quaystatus,quaycode,quayfacilities.bicycleparking,quayowner.quayownercode,mutationdate,quayfacilities.shelter,quaylocationdata.rd-x,quaylocationdata.rd-y,quaydisabledaccessible.disabledaccessible"/>
 #!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="KEEP_ATTRS" PARM_VALUE="quayfacilities.bins,quaynamedata.quayname,quaystatusdata.quaystatus,quaycode,quayfacilities.bicycleparking,quayowner.quayownercode,mutationdate,quayfacilities.shelter,quaylocationdata.rd-x,quaylocationdata.rd-y,quaydisabledaccessible.disabledaccessible"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeKeeper"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
 #!   IDENTIFIER="9"
 #!   TYPE="CoordinateSystemSetter"
 #!   VERSION="0"
-#!   POSITION="-903.136 2935.91"
-#!   BOUNDING_RECT="-903.136 2935.91 506 71"
+#!   POSITION="-906.261 2885.91"
+#!   BOUNDING_RECT="-906.261 2885.91 506 71"
 #!   ORDER="5e+14"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -1358,17 +1358,17 @@
 #!     <XFORM_ATTR ATTR_NAME="quaynamedata.quayname" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="quayowner.quayownercode" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="quaystatusdata.quaystatus" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE="EPSG:28992"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="CoordinateSystemSetter"/>
+#!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE="EPSG:28992"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
 #!   IDENTIFIER="16"
 #!   TYPE="TestFilter"
 #!   VERSION="1"
-#!   POSITION="-1926.01 2942.16"
-#!   BOUNDING_RECT="-1926.01 2942.16 788.508 71"
+#!   POSITION="-1929.14 2892.16"
+#!   BOUNDING_RECT="-1929.14 2892.16 788.508 71"
 #!   ORDER="5e+14"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -1408,8 +1408,8 @@
 #!   IDENTIFIER="19"
 #!   TYPE="AttributeManager"
 #!   VERSION="1"
-#!   POSITION="560.235 3179.53"
-#!   BOUNDING_RECT="560.235 3179.53 -1 -1"
+#!   POSITION="557.11 3129.53"
+#!   BOUNDING_RECT="557.11 3129.53 -1 -1"
 #!   ORDER="5e+14"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -1426,23 +1426,23 @@
 #!     <XFORM_ATTR ATTR_NAME="bicyclepar" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="bins" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="shelter" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="mutationdate mutation  RENAME_SET_VALUE quaycode quaycode  NO_OP quaynamedata.quayname quayname  RENAME_SET_VALUE quayowner.quayownercode quayowner  RENAME_SET_VALUE quaystatusdata.quaystatus quaystatus  RENAME_SET_VALUE quaydisabledaccessible.disabledaccessible accessible  RENAME_SET_VALUE quayfacilities.bicycleparking bicyclepar  RENAME_SET_VALUE quayfacilities.bins bins  RENAME_SET_VALUE quayfacilities.shelter shelter  RENAME_SET_VALUE quaylocationdata.rd-x quaylocationdata.rd-x  REMOVE quaylocationdata.rd-y quaylocationdata.rd-y  REMOVE gml_parent_id gml_parent_id  REMOVE gml_parent_property gml_parent_property  REMOVE gml_id gml_id  REMOVE geom geom  REMOVE _predicate _predicate  REMOVE gid gid  REMOVE gid.xsi_nil gid.xsi_nil  REMOVE provincienaam provincienaam  REMOVE provincienaam.xsi_nil provincienaam.xsi_nil  REMOVE"/>
-#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeManager"/>
-#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="mutationdate mutation  RENAME_SET_VALUE quaycode quaycode  NO_OP quaynamedata.quayname quayname  RENAME_SET_VALUE quayowner.quayownercode quayowner  RENAME_SET_VALUE quaystatusdata.quaystatus quaystatus  RENAME_SET_VALUE quaydisabledaccessible.disabledaccessible accessible  RENAME_SET_VALUE quayfacilities.bicycleparking bicyclepar  RENAME_SET_VALUE quayfacilities.bins bins  RENAME_SET_VALUE quayfacilities.shelter shelter  RENAME_SET_VALUE quaylocationdata.rd-x quaylocationdata.rd-x  REMOVE quaylocationdata.rd-y quaylocationdata.rd-y  REMOVE gml_parent_id gml_parent_id  REMOVE gml_parent_property gml_parent_property  REMOVE gml_id gml_id  REMOVE geom geom  REMOVE _predicate _predicate  REMOVE gid gid  REMOVE gid.xsi_nil gid.xsi_nil  REMOVE provincienaam provincienaam  REMOVE provincienaam.xsi_nil provincienaam.xsi_nil  REMOVE"/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeManager"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
 #!   IDENTIFIER="18"
 #!   TYPE="VertexCreator"
 #!   VERSION="1"
-#!   POSITION="-869.759 3179.53"
-#!   BOUNDING_RECT="-869.759 3179.53 -1 -1"
+#!   POSITION="-872.884 3129.53"
+#!   BOUNDING_RECT="-872.884 3129.53 -1 -1"
 #!   ORDER="5e+14"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -1475,21 +1475,21 @@
 #!     <XFORM_ATTR ATTR_NAME="quayowner.quayownercode" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="quaystatusdata.quaystatus" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="YVAL" PARM_VALUE="@Value(quaylocationdata.rd-y)"/>
 #!     <XFORM_PARM PARM_NAME="ZVAL" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="INDEX" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="XVAL" PARM_VALUE="@Value(quaylocationdata.rd-x)"/>
-#!     <XFORM_PARM PARM_NAME="YVAL" PARM_VALUE="@Value(quaylocationdata.rd-y)"/>
 #!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="MODE_NAME" PARM_VALUE="Add Point"/>
-#!     <XFORM_PARM PARM_NAME="PARAMETER_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="VertexCreator"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETER_GROUP" PARM_VALUE=""/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
 #!   IDENTIFIER="25"
 #!   TYPE="SpatialFilter"
 #!   VERSION="8"
-#!   POSITION="-78.1257 3175.91"
-#!   BOUNDING_RECT="-78.1257 3175.91 -1 -1"
+#!   POSITION="-81.2507 3125.91"
+#!   BOUNDING_RECT="-81.2507 3125.91 -1 -1"
 #!   ORDER="5e+14"
 #!   PARMS_EDITED="false"
 #!   ENABLED="true"
@@ -1544,31 +1544,31 @@
 #!     <XFORM_ATTR ATTR_NAME="quayowner.quayownercode" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="quaystatusdata.quaystatus" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_MODE" PARM_VALUE="Merge Filter"/>
-#!     <XFORM_PARM PARM_NAME="PASS_CRITERIA" PARM_VALUE="Pass Against One Filter"/>
-#!     <XFORM_PARM PARM_NAME="TESTS_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="BASE_TYPE" PARM_VALUE="Multiple Filters"/>
-#!     <XFORM_PARM PARM_NAME="PREDICATES" PARM_VALUE="INTERSECTS"/>
-#!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_GROUP" PARM_VALUE="YES"/>
-#!     <XFORM_PARM PARM_NAME="USE_BOUNDING_BOX" PARM_VALUE="No"/>
-#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="CURVE_BOUNDARY_RULE_PARAM" PARM_VALUE="Default Rule"/>
 #!     <XFORM_PARM PARM_NAME="ATTR_PREFIX" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TESTS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="AGGREGATE_HANDLING" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PASS_CRITERIA" PARM_VALUE="Pass Against One Filter"/>
+#!     <XFORM_PARM PARM_NAME="FME_PROCESS_COUNTDISP" PARM_VALUE="No Parallelism"/>
+#!     <XFORM_PARM PARM_NAME="FME_PROCESS_GROUPS_ORDERED" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="CURVE_BOUNDARY_RULE_PARAM" PARM_VALUE="Default Rule"/>
+#!     <XFORM_PARM PARM_NAME="PREDICATES" PARM_VALUE="INTERSECTS"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_MODE" PARM_VALUE="Merge Filter"/>
 #!     <XFORM_PARM PARM_NAME="ATTR_CONFLICT_RES" PARM_VALUE="Use Candidate"/>
+#!     <XFORM_PARM PARM_NAME="BASE_TYPE" PARM_VALUE="Multiple Filters"/>
 #!     <XFORM_PARM PARM_NAME="PREDATTR" PARM_VALUE="_predicate"/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SpatialFilter"/>
-#!     <XFORM_PARM PARM_NAME="FME_PROCESS_COUNTDISP" PARM_VALUE="No Parallelism"/>
+#!     <XFORM_PARM PARM_NAME="USE_BOUNDING_BOX" PARM_VALUE="No"/>
 #!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="AGGREGATE_HANDLING" PARM_VALUE="Yes"/>
-#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="FME_PROCESS_GROUPS_ORDERED" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_GROUP" PARM_VALUE="YES"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
 #!   IDENTIFIER="28"
 #!   TYPE="TestFilter"
 #!   VERSION="1"
-#!   POSITION="560.235 2900.41"
-#!   BOUNDING_RECT="560.235 2900.41 713.507 71"
+#!   POSITION="557.11 2850.41"
+#!   BOUNDING_RECT="557.11 2850.41 713.507 71"
 #!   ORDER="5e+14"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -1901,7 +1901,7 @@ INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
  } ]
 #! END_WB_HEADER
 #! START_SOURCE_HEADER XML XML_1
-DEFAULT_MACRO SourceDataset_XML_1 C:\Users\Willy\AppData\Local\Temp\ExportCHB20171008010001.xml
+DEFAULT_MACRO SourceDataset_XML_1 ${TEMP}\ExportCHB.xml
 GUI MULTIFILE SourceDataset_XML_1 XML/GML/Compressed_XML_Files(*.xml;*.gml;*.gz)|*.xml;*.gml;*.gz|XML_Files(*.xml)|*.xml|GML_Files(*.gml)|*.gml|Compressed_XML_Files(*.gz)|*.gz|All_Files(*)|* Source XML File(s):
 # ============================================================================
 #
@@ -2073,7 +2073,7 @@ ESRISHAPE_1_DATASET "$(DestDataset_ESRISHAPE_1)"
 
 #! END_HEADER
 
-LOG_FILENAME "$(FME_MF_DIR)bushaltes.log"
+LOG_FILENAME "$(FME_MF_DIR)Bushaltes uit Centraal Halte Bestand.log"
 LOG_APPEND NO
 LOG_MAX_FEATURES 200
 LOG_MAX_RECORDED_FEATURES 200
@@ -2096,12 +2096,12 @@ XML_1_READER_META_ATTRIBUTES fme_feature_type
 # -------------------------------------------------------------------------
 
 MULTI_READER_CONTINUE_ON_READER_FAILURE No
-FME_BEGIN_PYTHON_ENC import<space>os<comma><space>datetime<comma><space>urllib<comma><space>gzip<comma><space>shutil<lf><lf>filename<space>=<space><apos>ExportCHB<apos><space>+<space>datetime.datetime.now<openparen><closeparen>.strftime<openparen><quote>%Y%m%d<quote><closeparen><space>+<space><apos>010001.xml<apos><lf>url<space>=<space><apos>http:<solidus><solidus>data.ndovloket.nl<solidus>haltes<solidus><apos><space>+<space>filename<space>+<space><apos>.gz<apos><lf>temp<space>=<space>os.environ<openbracket><apos>TEMP<apos><closebracket><lf>zipped<space>=<space>os.path.join<openparen>temp<comma><space>filename<space>+<space><apos>.gz<apos><closeparen><lf>unzipped<space>=<space>os.path.join<openparen>temp<comma><space>filename<closeparen><lf>urllib.URLopener<openparen><closeparen>.retrieve<openparen>url<comma><space>zipped<closeparen><lf><lf>with<space>gzip.open<openparen>zipped<comma><space><apos>rb<apos><closeparen><space>as<space>f_in<comma><space>open<openparen>unzipped<comma><space><apos>wb<apos><closeparen><space>as<space>f_out:<lf><space><space><space><space>shutil.copyfileobj<openparen>f_in<comma><space>f_out<closeparen>
-FME_END_PYTHON_ENC import<space>os<comma><space>datetime<lf><lf>filename<space>=<space><apos>ExportCHB<apos><space>+<space>datetime.datetime.now<openparen><closeparen>.strftime<openparen><quote>%Y%m%d<quote><closeparen><space>+<space><apos>010001.xml<apos><lf>temp<space>=<space>os.environ<openbracket><apos>TEMP<apos><closebracket><lf>zipped<space>=<space>os.path.join<openparen>temp<comma><space>filename<space>+<space><apos>.gz<apos><closeparen><lf>unzipped<space>=<space>os.path.join<openparen>temp<comma><space>filename<closeparen><lf><lf>os.remove<openparen>zipped<closeparen><space><lf>os.remove<openparen>unzipped<closeparen><space><lf><lf><lf><lf><lf>
+FME_BEGIN_PYTHON_ENC import<space>os<comma><space>datetime<comma><space>urllib<comma><space>gzip<comma><space>shutil<lf><lf>filename<space>=<space><apos>ExportCHB<apos><space>+<space>datetime.datetime.now<openparen><closeparen>.strftime<openparen><quote>%Y%m%d<quote><closeparen><space>+<space><apos>010001.xml.gz<apos><lf>url<space>=<space><apos>http:<solidus><solidus>data.ndovloket.nl<solidus>haltes<solidus><apos><space>+<space>filename<lf>temp<space>=<space>os.environ<openbracket><apos>TEMP<apos><closebracket><lf>zipped<space>=<space>os.path.join<openparen>temp<comma><space>filename<closeparen><lf>unzipped<space>=<space>os.path.join<openparen>temp<comma><space><apos>ExportCHB.xml<apos><closeparen><lf>urllib.URLopener<openparen><closeparen>.retrieve<openparen>url<comma><space>zipped<closeparen><lf><lf>with<space>gzip.open<openparen>zipped<comma><space><apos>rb<apos><closeparen><space>as<space>f_in<comma><space>open<openparen>unzipped<comma><space><apos>wb<apos><closeparen><space>as<space>f_out:<lf><space><space><space><space>shutil.copyfileobj<openparen>f_in<comma><space>f_out<closeparen>
+FME_END_PYTHON_ENC import<space>os<comma><space>datetime<lf><lf>filename<space>=<space><apos>ExportCHB<apos><space>+<space>datetime.datetime.now<openparen><closeparen>.strftime<openparen><quote>%Y%m%d<quote><closeparen><space>+<space><apos>010001.xml.gz<apos><lf>temp<space>=<space>os.environ<openbracket><apos>TEMP<apos><closebracket><lf>zipped<space>=<space>os.path.join<openparen>temp<comma><space>filename<closeparen><lf>unzipped<space>=<space>os.path.join<openparen>temp<comma><space><apos>ExportCHB.xml<apos><closeparen><lf><lf>os.remove<openparen>zipped<closeparen><space><lf>os.remove<openparen>unzipped<closeparen><space><lf><lf><lf><lf><lf>
 
 # -------------------------------------------------------------------------
 
-MACRO WORKSPACE_NAME bushaltes
+MACRO WORKSPACE_NAME Bushaltes uit Centraal Halte Bestand
 MACRO FME_VIEWER_APP fmedatainspector
 # -------------------------------------------------------------------------
 WFS_1_DEF provincies   xml_type                     "xml_no_geom xml_point xml_line xml_area xml_arc xml_surface xml_solid xml_aggregate"   gml_parent_id                xml_buffer   gml_parent_property          xml_buffer   gml_id                       xml_buffer   gid                          xml_int32   gid.xsi_nil                  xml_boolean   provincienaam                xml_buffer   provincienaam.xsi_nil        xml_boolean   geom                         xml_geometry
@@ -2114,16 +2114,16 @@ WFS_1_MERGE_DEF WFS_1::provincies EXACT provincies
 XML_1_MERGE_DEF XML_1::quay EXACT quay
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "quay (XML_1) Splitter"    INPUT FEATURE_TYPE quay    OUTPUT FEATURE_TYPE quay_XML_1
+FACTORY_DEF * TeeFactory    FACTORY_NAME "provincies (WFS_1) Splitter"    INPUT FEATURE_TYPE provincies    OUTPUT FEATURE_TYPE provincies_WFS_1
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "provincies (WFS_1) Splitter"    INPUT FEATURE_TYPE provincies    OUTPUT FEATURE_TYPE provincies_WFS_1
+FACTORY_DEF * TeeFactory    FACTORY_NAME "quay (XML_1) Splitter"    INPUT FEATURE_TYPE quay    OUTPUT FEATURE_TYPE quay_XML_1
 DEFAULT_MACRO WB_CURRENT_CONTEXT
 # -------------------------------------------------------------------------
 
-INCLUDE [    set macroLine "MACRO AttributeKeeper_f9b49e82_842f_45ae_9ae2_cab4aa6447b713_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
+INCLUDE [    set macroLine "MACRO AttributeKeeper_1cd38a32_3b07_44fc_b947_83041e22472b2_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeKeeper    INPUT  FEATURE_TYPE quay_XML_1    OUTPUT FEATURE_TYPE AttributeKeeper_OUTPUT        @KeepAttributes(fme_encoded,quayfacilities.bins,quaynamedata.quayname,quaystatusdata.quaystatus,quaycode,quayfacilities.bicycleparking,quayowner.quayownercode,mutationdate,quayfacilities.shelter,quaylocationdata.rd-x,quaylocationdata.rd-y,quaydisabledaccessible.disabledaccessible,fme_pcre_match,"^fme_$(AttributeKeeper_f9b49e82_842f_45ae_9ae2_cab4aa6447b713_LIST_EXP)")
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeKeeper    INPUT  FEATURE_TYPE quay_XML_1    OUTPUT FEATURE_TYPE AttributeKeeper_OUTPUT        @KeepAttributes(fme_encoded,quayfacilities.bins,quaynamedata.quayname,quaystatusdata.quaystatus,quaycode,quayfacilities.bicycleparking,quayowner.quayownercode,mutationdate,quayfacilities.shelter,quaylocationdata.rd-x,quaylocationdata.rd-y,quaydisabledaccessible.disabledaccessible,fme_pcre_match,"^fme_$(AttributeKeeper_1cd38a32_3b07_44fc_b947_83041e22472b2_LIST_EXP)")
 
 # -------------------------------------------------------------------------
 
@@ -2152,14 +2152,14 @@ FACTORY_DEF * AttrSetFactory    FACTORY_NAME AttributeManager    INPUT  FEATURE_
 FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeManager OUTPUT Splitter"   INPUT FEATURE_TYPE AttributeManager_OUTPUT   OUTPUT FEATURE_TYPE AttributeManager_OUTPUT_0_qkWxPTSviNs=   OUTPUT FEATURE_TYPE AttributeManager_OUTPUT_1_qYvk7jiZJpI=
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME TestFilter_2    INPUT  FEATURE_TYPE AttributeManager_OUTPUT_0_qkWxPTSviNs=    OUTPUT FEATURE_TYPE TestFilter_2_TESTFILTERINPUTLINE_0
+FACTORY_DEF * TeeFactory    FACTORY_NAME TestFilter_2    INPUT  FEATURE_TYPE AttributeManager_OUTPUT_1_qYvk7jiZJpI=    OUTPUT FEATURE_TYPE TestFilter_2_TESTFILTERINPUTLINE_0
 
 FACTORY_DEF * TestFactory FACTORY_NAME TestFilter_2_TestFactory_0 INPUT FEATURE_TYPE TestFilter_2_TESTFILTERINPUTLINE_0 TEST @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>quayowner<closeparen>,TestFilter_2) = P0020 ENCODED BOOLEAN_OPERATOR OR COMPOSITE_TEST_EXPR <Unused> OUTPUT PASSED FEATURE_TYPE TestFilter_2_Wegbeheerder<space>provincie<space>Groningen OUTPUT FAILED FEATURE_TYPE TestFilter_2_TESTFILTERINPUTLINE_1
 FACTORY_DEF * TeeFactory FACTORY_NAME TestFilter_2_Overige<space>wegbeheerders INPUT FEATURE_TYPE TestFilter_2_TESTFILTERINPUTLINE_1 OUTPUT FEATURE_TYPE TestFilter_2_Overige<space>wegbeheerders
 FACTORY_DEF * TeeFactory   FACTORY_NAME "TestFilter_2 Overige<space>wegbeheerders Output Nuker"   INPUT FEATURE_TYPE TestFilter_2_Overige<space>wegbeheerders
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC AttributeManager_OUTPUT_1_qYvk7jiZJpI= TO ESRISHAPE __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>bushaltes_in_de_provincie<closeparen> GEOMETRY    ROUTE FME_GENERIC TestFilter_2_Wegbeheerder<space>provincie<space>Groningen TO ESRISHAPE __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>bushaltes_van_de_provincie<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC AttributeManager_OUTPUT_0_qkWxPTSviNs= TO ESRISHAPE __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>bushaltes_in_de_provincie<closeparen> GEOMETRY    ROUTE FME_GENERIC TestFilter_2_Wegbeheerder<space>provincie<space>Groningen TO ESRISHAPE __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>bushaltes_van_de_provincie<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
