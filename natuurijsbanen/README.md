@@ -11,5 +11,7 @@ De natuurijsbanen zijn door ons getagt met `"leisure"="ice_rink"` en `"seasonal"
 
 We maken gebruik van de Overpass API om de gegevens weer uit OpenStreetMap te halen. Als je wilt weten hoe de Overpass API werkt, kun je bijvoorbeeld [deze tutorial](https://github.com/FrieseWoudloper/workshop-maptime2016-overpass) volgen.
 
+Voor het maken van de FME workspace hebben we gebruik gemaakt van de informatie in het [Gis.Travelingo](http://gis.travelingo.nl/2016/07/06/fme-en-de-overpass-api-van-openstreetmap/) blog van Pim Verver.
+
 ![Natuurijsbanen in Nederland](./image/overzicht.png "Natuurijsbanen in Nederland")  
 <sub>Afbeelding 2: Natuurijsbanen in Nederland, oktober 2017 (&copy; OpenStreetMap-auteurs)</sub>
