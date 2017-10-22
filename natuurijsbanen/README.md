@@ -1,6 +1,6 @@
 In 2014 kreeg de provincie Groningen het verzoek om gegevens over natuurijsbanen als open data beschikbaar te stellen. Helaas was dat niet mogelijk, omdat de provincie deze gegevens niet heeft. Toch wilden we de aanvrager niet in de kou laten staan. Er zijn zo veel mooie natuurijsbanen in Groningen, die moeten we toch op een kaartje kunnen plotten?!
 
-We zijn toen een kleine crowdsourcing actie gestart en hebben met zijn allen binnen een paar weken alle Groninger natuurijsbanen ingetekend in [OpenStreetMap](https://nl.wikipedia.org/wiki/OpenStreetMap). Onze collega's komen uit de hele provincie, dus er was voldoende lokale kennis aanwezig :wink:
+We zijn toen een kleine crowdsourcing actie gestart en hebben met zijn allen binnen een paar weken alle Groninger natuurijsbanen ingetekend in [OpenStreetMap](https://nl.wikipedia.org/wiki/OpenStreetMap). Onze collega's komen uit de hele provincie, dus er was voldoende lokale kennis aanwezig.
 
 ![OpenStreetMap mini-mapathon bij de provincie Groningen](./image/tweet.jpg "OpenStreetMap mini-mapathon bij de provincie Groningen")  
 <sub>Afbeelding 1: OpenStreetMap mini-mapathon bij de provincie, januari 2014 (foto: [@HetKanWelJurist](https://twitter.com/hetkanweljurist))</sub>
