@@ -1,6 +1,9 @@
 In 2014 kreeg de provincie Groningen het verzoek om gegevens over natuurijsbanen als open data beschikbaar te stellen. Helaas was dat niet mogelijk, omdat de provincie deze gegevens niet heeft. Toch wilden we de aanvrager niet in de kou laten staan. Er zijn zo veel mooie natuurijsbanen in Groningen, die moeten we toch op een kaartje kunnen plotten?!
 
-We zijn toen een kleine crowdsourcing actie gestart en hebben met zijn allen binnen een paar weken alle Groninger natuurijsbanen ingetekend in [OpenStreetMap](https://nl.wikipedia.org/wiki/OpenStreetMap). Onze collega's komen uit de hele provincie, dus er was voldoende lokale kennis aanwezig :smiley:
+We zijn toen een kleine crowdsourcing actie gestart en hebben met zijn allen binnen een paar weken alle Groninger natuurijsbanen ingetekend in [OpenStreetMap](https://nl.wikipedia.org/wiki/OpenStreetMap). Onze collega's komen uit de hele provincie, dus er was voldoende lokale kennis aanwezig :wink:
+
+![OpenStreetMap mini-mapathon bij de provincie Groningen](./image/tweet.jpg "OpenStreetMap mini-mapathon bij de provincie Groningen")
+Afbeelding 1: OpenStreetMap mini-mapathon bij de provincie, januari 2014 (foto: [@HetKanWelJurist](https://twitter.com/hetkanweljurist))
 
 De gegevens in OpenStreetMap zijn vrij beschikbaar. Je mag ze gebruiken voor je eigen kaarten en analyses, maar dan moet je niet vergeten om de juiste [naamsvermelding](http://www.openstreetmap.org/copyright) op te nemen.
 
@@ -8,4 +11,5 @@ De natuurijsbanen zijn door ons getagt met `"leisure"="ice_rink"` en `"seasonal"
 
 We maken gebruik van de Overpass API om de gegevens weer uit OpenStreetMap te halen. Als je wilt weten hoe de Overpass API werkt, kun je bijvoorbeeld [deze tutorial](https://github.com/FrieseWoudloper/workshop-maptime2016-overpass) volgen.
 
-![OpenStreetMap mini-mapathon bij de provincie Groningen](./image/tweet.jpg "OpenStreetMap mini-mapathon bij de provincie Groningen")
+![Natuurijsbanen in Nederland](./image/overzicht.png "Natuurijsbanen in Nederland")
+Afbeelding 2: Natuurijsbanen in Nederland, oktober 2017 (&copy; OpenStreetMap-auteurs)
