@@ -7,5 +7,5 @@ De repository bevat de volgende workspaces:
 * het uitlezen van [natuurijsbanen](../../tree/master/natuurijsbanen) uit OpenStreetMap,
 * het uploaden van datasets naar de PDOK [Geodatastore](../../tree/master/geodatastore).
 
-Bij vragen of suggesties voor verbetering kun je contact met ons opnemen via databeheer@provinciegroningen.nl.   
+Bij vragen of suggesties voor verbetering kun je contact met ons opnemen via databeheer@provinciegroningen.nl. 
 Je kunt natuurlijk ook de repository forken, de code aanpassen en een pull request doen. Dat zouden we helemaal geweldig vinden :-)
