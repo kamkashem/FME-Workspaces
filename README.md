@@ -1,4 +1,4 @@
-Via deze repository deelt de provincie Groningen workspaces gebouwd in FME Desktop. FME Desktop is een spatial ETL tool. De meeste workspaces zijn gemaakt in versie 2016 en soms 2015.
+Via deze repository deelt de provincie Groningen workspaces gebouwd in FME Desktop. FME Desktop is een spatial ETL tool. De meeste workspaces zijn gemaakt in versie 2016 en soms 2015 of 2018. 
 
 De workspaces worden beschikbaar gesteld onder een [EUPL (European Union Public Licence)](https://eupl.eu/1.2/nl/).
 
