@@ -4,4 +4,4 @@ Met het volgende request vraag je bijvoorbeeld alle verkeersbesluiten van de pro
 
 http://zoekdienst.overheid.nl/sru/Search?version=1.2&operation=searchRetrieve&x-connection=oep&startRecord=1&maximumRecords=1000&query=(keyword=verkeersbesluit)+and+(creator=groningen)+and+(organisationType=Provincie)
 
-Met de workspace in deze map kunnen verkeersbesluiten van de provincie 'geharvest' worden. Hij is gemaakt in FME Desktop 2016.
+Met de workspace in deze map kunnen verkeersbesluiten van de provincie 'geharvest' worden. Hij is gemaakt in FME Desktop 2017.
