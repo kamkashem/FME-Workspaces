@@ -1,7 +1,7 @@
 #! <?xml version="1.0" encoding="UTF-8" ?>
 #! <WORKSPACE
 #    Command-line to run this workspace:
-#        N:\FMEDesktop\v2018.0\32\fme.exe P:\Bureaublad\aol-metadata.fmw
+#        N:\FMEDesktop\v2018.0\32\fme.exe P:\Bureaublad\agol-metadata.fmw
 #              --metadata_file ""
 #              --username ""
 #              --password "********"
@@ -20,8 +20,8 @@
 #!   END_TCL=""
 #!   EXPLICIT_BOOKMARK_ORDER="false"
 #!   FME_BUILD_NUM="18301"
-#!   FME_DOCUMENT_GUID="73ab1f01-6bd5-43ac-9208-9afd03c104bc"
-#!   FME_DOCUMENT_PRIORGUID="eaac6462-b49a-4e7d-a2da-e4d29c8b353b,91492f92-9894-405e-b56f-d58c20d04b14,4c120769-655e-4030-bbd8-fa5729557939"
+#!   FME_DOCUMENT_GUID="40205b8e-0650-4003-9ab0-e61011ec4742"
+#!   FME_DOCUMENT_PRIORGUID="eaac6462-b49a-4e7d-a2da-e4d29c8b353b,91492f92-9894-405e-b56f-d58c20d04b14,4c120769-655e-4030-bbd8-fa5729557939,73ab1f01-6bd5-43ac-9208-9afd03c104bc"
 #!   FME_GEOMETRY_HANDLING="Enhanced"
 #!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
 #!   FME_REPROJECTION_ENGINE="FME"
@@ -30,7 +30,7 @@
 #!   HISTORY=""
 #!   IGNORE_READER_FAILURE="No"
 #!   LAST_SAVE_BUILD="FME(R) 2018.0.0.2 (20180414 - Build 18301 - WIN32)"
-#!   LAST_SAVE_DATE="2018-07-21T10:50:25"
+#!   LAST_SAVE_DATE="2018-07-22T19:00:05"
 #!   LOG_FILE=""
 #!   LOG_MAX_RECORDED_FEATURES="200"
 #!   MARKDOWN_DESCRIPTION=""
@@ -48,10 +48,10 @@
 #!   TITLE=""
 #!   USAGE=""
 #!   USE_MARKDOWN=""
-#!   VIEW_POSITION="-505.406 821.767"
+#!   VIEW_POSITION="-348.218 1147.33"
 #!   WARN_INVALID_XFORM_PARAM="Yes"
 #!   WORKSPACE_VERSION="1"
-#!   ZOOM_SCALE="81"
+#!   ZOOM_SCALE="70"
 #! >
 #! <DATASETS>
 #! </DATASETS>
@@ -85,7 +85,7 @@
 #!   IS_STAND_ALONE="true"
 #! />
 #! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI IGNORE URL_OR_ATTR endpoint http%https%ftp endpoint:"
+#!   GUI_LINE="GUI IGNORE OPTIONAL URL_OR_ATTR endpoint http%https%ftp endpoint:"
 #!   DEFAULT_VALUE="https://www.arcgis.com/sharing/rest"
 #!   IS_STAND_ALONE="true"
 #! />
@@ -93,7 +93,7 @@
 #! <COMMENTS>
 #! <COMMENT
 #!   IDENTIFIER="12"
-#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Auteur:&lt;/span&gt; Willy Tadema&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Datum:&lt;/span&gt; 20 juli 2018&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Omschrijving: &lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Workspace om te demonstreren hoe je metadata van een item in ArcGIS Online kunt bijwerken via de REST API&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Published parameters:&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;metadata_file - pad naar het XML-bestand met de nieuwe metadata&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;username - ArcGIS Online gebruikersnaam&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;password - ArcGIS Online wachtwoord&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;item - unieke identifier voor het item dat bijgewerkt moet worden&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Private parameters:&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;endpoint - URL van de ArcGIS Online REST API&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Auteur:&lt;/span&gt; Willy Tadema&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Datum:&lt;/span&gt; 20 juli 2018&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Omschrijving: &lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Workspace om te demonstreren hoe je metadata van een item in ArcGIS Online kunt bijwerken via de REST API&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Published parameters:&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;metadata_file - pad naar het XML-bestand met de nieuwe metadata&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;username - ArcGIS Online gebruikersnaam&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;password - ArcGIS Online wachtwoord&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;item - unieke identifier voor het item dat bijgewerkt moet worden&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Private parameters:&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;endpoint - URL van de ArcGIS REST API&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
 #!   POSITION="-34.97059145543858 592.16650426501042"
 #!   TOP_LEFT="-34.97059145543858 592.16650426501042"
 #!   BOTTOM_RIGHT="3005.6794085445617 187.1625042650104"
@@ -119,7 +119,7 @@
 #!   BOUNDING_RECT="796.50912509125055 -42.126531265312565 611.6251562515622 861.00750007500085"
 #!   STICKY="true"
 #!   COLOUR="0.37254901960784315,0.40784313725490196,0.058823529411764705"
-#!   CONTENTS="3 6 7 8 5 "
+#!   CONTENTS="3 8 7 5 6 "
 #! >
 #! </BOOKMARK>
 #! <BOOKMARK
@@ -492,12 +492,11 @@ GUI PASSWORD password password:
 DEFAULT_MACRO item 
 GUI TEXT item item:
 DEFAULT_MACRO endpoint https://www.arcgis.com/sharing/rest
-GUI IGNORE URL endpoint http%https%ftp endpoint:
+GUI IGNORE OPTIONAL URL endpoint http%https%ftp endpoint:
 INCLUDE [ if {{$(metadata_file)} == {}} { puts_real {Parameter 'metadata_file' must be given a value.}; exit 1; }; ]
 INCLUDE [ if {{$(username)} == {}} { puts_real {Parameter 'username' must be given a value.}; exit 1; }; ]
 INCLUDE [ if {{$(password)} == {}} { puts_real {Parameter 'password' must be given a value.}; exit 1; }; ]
 INCLUDE [ if {{$(item)} == {}} { puts_real {Parameter 'item' must be given a value.}; exit 1; }; ]
-INCLUDE [ if {{$(endpoint)} == {}} { puts_real {Parameter 'endpoint' must be given a value.}; exit 1; }; ]
 #! START_HEADER
 #! START_WB_HEADER
 READER_TYPE MULTI_READER
@@ -512,7 +511,7 @@ NULL_DEST_DATASET null
 
 #! END_HEADER
 
-LOG_FILENAME "$(FME_MF_DIR)aol-metadata.log"
+LOG_FILENAME "$(FME_MF_DIR)agol-metadata.log"
 LOG_APPEND NO
 LOG_MAX_FEATURES 200
 LOG_MAX_RECORDED_FEATURES 200
@@ -528,7 +527,7 @@ MULTI_READER_CONTINUE_ON_READER_FAILURE No
 
 # -------------------------------------------------------------------------
 
-MACRO WORKSPACE_NAME aol-metadata
+MACRO WORKSPACE_NAME agol-metadata
 MACRO FME_VIEWER_APP fmedatainspector
 # -------------------------------------------------------------------------
 
@@ -569,9 +568,9 @@ DEFAULT_MACRO _WB_BYPASS_TERMINATION No
 FACTORY_DEF * TeeFactory FACTORY_NAME JSONFlattener_<Rejected> INPUT FEATURE_TYPE JSONFlattener_<REJECTED>  OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, JSONFlattener<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
 # -------------------------------------------------------------------------
 
-INCLUDE [    set macroLine "MACRO AttributeKeeper_23a6a5a5_683c_4681_bd0b_536ed0c39b872_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
+INCLUDE [    set macroLine "MACRO AttributeKeeper_5263d6fb_f263_496d_b889_3269d8571b8f1_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
 
-FACTORY_DEF {*} TeeFactory    FACTORY_NAME AttributeKeeper    INPUT  FEATURE_TYPE JSONFlattener_OUTPUT    OUTPUT { FEATURE_TYPE AttributeKeeper_OUTPUT        @KeepAttributes(fme_encoded,token,fme_pcre_match,"^fme_$(AttributeKeeper_23a6a5a5_683c_4681_bd0b_536ed0c39b872_LIST_EXP)")         }
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME AttributeKeeper    INPUT  FEATURE_TYPE JSONFlattener_OUTPUT    OUTPUT { FEATURE_TYPE AttributeKeeper_OUTPUT        @KeepAttributes(fme_encoded,token,fme_pcre_match,"^fme_$(AttributeKeeper_5263d6fb_f263_496d_b889_3269d8571b8f1_LIST_EXP)")         }
 
 # -------------------------------------------------------------------------
 
