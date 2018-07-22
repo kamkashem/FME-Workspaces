@@ -7,7 +7,7 @@ De repository bevat de volgende workspaces:
 * het opvragen van [metadata in het Nationaal Georegister](../../tree/master/ngr-metadata),
 * het downloaden van een [exportbestand uit Haltescan](../../tree/master/haltescan),
 * het harvesten van [verkeersbesluiten](../../tree/master/verkeersbesluiten),
-* het inlezen van [bushaltes](../../tree/master/bushaltes) uit het Centraal Halte Bestand van het NDOV,
+* het inlezen van haltegegevens uit het [Centraal Halte Bestand](../../tree/master/bushaltes) van het NDOV,
 * het opvragen van [natuurijsbanen](../../tree/master/natuurijsbanen) uit OpenStreetMap,
 * het uploaden van datasets naar de PDOK [Geodatastore](../../tree/master/geodatastore).
 
