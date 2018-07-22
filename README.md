@@ -6,6 +6,7 @@ De repository bevat de volgende workspaces:
 * het bijwerken van [metadata in ArcGIS Online](../../tree/master/agol-metadata),
 * het opvragen van [metadata in het Nationaal Georegister](../../tree/master/ngr-metadata),
 * het downloaden van een [exportbestand uit Haltescan](../../tree/master/haltescan),
+* een prototype voor het opbouwen van [mutatiehistorie in ArcGIS](../../tree/master/historie-prototype), 
 * het harvesten van [verkeersbesluiten](../../tree/master/verkeersbesluiten),
 * het inlezen van haltegegevens uit het [Centraal Halte Bestand](../../tree/master/bushaltes) van het NDOV,
 * het opvragen van [natuurijsbanen](../../tree/master/natuurijsbanen) uit OpenStreetMap,
