@@ -11,4 +11,4 @@ Een feature heeft in de historie drie extra attributen ten opzichte van het bron
 
 De workspace is gemaakt in FME Desktop 2016 en getest met ArcGIS 10.3.1.
 
-Voor demonstratie- en testdoeleinden zijn twee ESRI Workspace documenten toegevoegd. Hiermee kunnen de feature classes geïmporterd worden die nodig zijn om de FME workspace uit te voeren.
+Voor demonstratie- en testdoeleinden zijn twee ESRI Workspace documenten toegevoegd. Hiermee kunnen de feature classes geïmporteerd worden die nodig zijn om de FME workspace uit te voeren.
